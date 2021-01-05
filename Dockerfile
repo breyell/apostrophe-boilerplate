@@ -4,4 +4,4 @@ COPY package*.json /app/
 RUN npm install
 COPY . /app
 EXPOSE 3000
-CMD [ "mongo:27017", "--", "npm", "start" ]
+CMD [ "npm", "start" ]
